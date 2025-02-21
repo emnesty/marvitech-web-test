@@ -11,6 +11,7 @@ export default function PublicLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
       <body
         className={`${fontSans.variable} font-sans antialiased bg-gray-900 flex justify-center items-center text-gray-900 min-h-screen`}>
 

@@ -13,6 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
       <body className={`${fontSans.variable} font-sans antialiased dark`}>
         <Providers>
             <SidebarProvider>
