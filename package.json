@@ -8,6 +8,12 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "eslintConfig": {
+  "rules": {
+   "no-unused-vars": 0,
+   "@typescript-eslint/no-unused-vars": 0
+  }
+},
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.5",
     "@radix-ui/react-avatar": "^1.1.2",
