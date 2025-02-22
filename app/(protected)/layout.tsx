@@ -12,20 +12,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-      <body className={`${fontSans.variable} font-sans antialiased dark`}>
-        <Providers>
-            <SidebarProvider>
-                <div className="flex">
-                  <AppSidebar />
-                  <SidebarInset className="flex-1 overflow-hidden px-4 md:px-6 lg:px-8">
-                    {children}
-                  </SidebarInset>
-                </div>
-            </SidebarProvider>
-        </Providers>
-      </body>
-    </html>
+    <>
+      <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+      <Providers>
+        <SidebarProvider>
+          <div className="flex">
+            <AppSidebar />
+            <SidebarInset className="flex-1 overflow-hidden px-4 md:px-6 lg:px-8">
+              {children}
+            </SidebarInset>
+          </div>
+        </SidebarProvider>
+      </Providers>
+    </>
   );
 }

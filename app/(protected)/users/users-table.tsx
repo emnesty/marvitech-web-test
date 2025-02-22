@@ -260,12 +260,11 @@ export default function UsersTable() {
 
   useEffect(() => {
     // Substitua a chamada fetch pela fetchClient
-    fetchClient("http://147.93.146.163:8082/api/user")
+    fetchClient("https://marvitech.inteligenciadascoisas.com.br/api/user")
       .then(async (response) => {
         if (response.status !== 200) {
           throw new Error("Erro ao buscar dados da API");
         }
-  
         // A API retorna um array de objetos com os campos:
         // { id, email, name, phoneNumber, role, distributionCenterId, isArchived }
         const apiData = await response.json();
