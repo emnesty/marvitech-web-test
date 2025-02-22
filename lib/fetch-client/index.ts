@@ -11,7 +11,6 @@ export const fetchClient = async (
 
   const response = await fetch(input, {
     mode: "cors", // Permite requisições cross-origin
-    credentials: "include", // Envia cookies junto com a requisição
     ...init,
     headers: {
       ...init?.headers,
